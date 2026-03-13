@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(105, 47, 47);
+}
+.card > * {
+  border: 2px solid rgb(96 139 168);
+  border-radius: 5px;
+  background-color: rgb(96 139 168 );
+}
+
+.lcard {
+  border: 2px dotted rgb(24, 21, 189);
+  display: flex;
+}
