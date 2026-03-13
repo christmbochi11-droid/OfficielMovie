@@ -1,13 +1,14 @@
-body {
-  background-color: rgb(105, 47, 47);
+.card{
+  background-color: rgb(102, 166, 169 / 0.8);
+  
 }
-.card > * {
-  border: 2px solid rgb(96 139 168);
-  border-radius: 5px;
-  background-color: rgb(96 139 168 );
+.cards{
+ display: flex;
+ flex-wrap: wrap;
+ margin: auto 10px;
+ justify-content: space-around;
+ align-items: center;
 }
-
-.lcard {
-  border: 2px dotted rgb(24, 21, 189);
-  display: flex;
+img{
+  width: 10vW;
 }
