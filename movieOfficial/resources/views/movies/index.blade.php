@@ -2,20 +2,22 @@
 
 @section('content')
         <h1>Liste des films</h1>
-    <div class="card" style="width: 18rem;">
-<div class="card-body">
-
-    <ul>
+   <div class="cards">
+    
         @foreach($movies as $movie)
-        <li class="lcard">
+      
+        
+            <div class="card">
             <a href="/movies/{{ $movie['id'] }}">
+                <img src={{$movie['img']}} alt={{ $movie['title'] }}>
+                <br>
                 {{ $movie['title'] }}
             </a>
-        </li>
+        </div>
+       
+    
         @endforeach
-    </ul>
+    
 </div>
-    </div>
-   
-
+    
     @endsection
