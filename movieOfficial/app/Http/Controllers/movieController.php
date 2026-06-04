@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Movie;
 use Illuminate\Http\Request;
+use PhpParser\Node\Expr\FuncCall;
 
 class movieController extends Controller
 {
@@ -23,5 +24,19 @@ class movieController extends Controller
         return view('movies.show', [
             'movie' => $movie
         ]);
+    }
+    public function create()
+    {
+        return view('movies.create');
+    }
+    public function store(Request $request)
+    {
+        $request->validate([
+            'title' => 'required|min:2',
+            'img' => 'required',
+            'description' => 'required|min:20',
+        ]);
+        Movie::create($request->all());
+        return redirect('/movies');
     }
 }
