@@ -7,4 +7,5 @@
 <p>{{ $movie['description'] }}</p>
 
 <a href="/movies">Retour</a>
+<a href="/movies/{{ $movie->id }}/edit">Modifier ?</a>
 @endsection
