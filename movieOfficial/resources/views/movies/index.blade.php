@@ -19,5 +19,5 @@
     @endforeach
 
 </div>
-
+<a href="/movies/create">Ajouter un film</a>
 @endsection
