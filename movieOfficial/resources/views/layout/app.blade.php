@@ -8,6 +8,10 @@
 <body>
     <header>
         <h1>🍿 OfficielMovie</h1>
+        <div class="top-navigation-bar">
+    <a href="#" class="btn-login">S'identifier</a>
+    
+</div>
 
     </header>
   @yield('content')
