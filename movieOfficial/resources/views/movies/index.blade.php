@@ -51,5 +51,5 @@
 <div class="button">
     <a href="/movies/create" class="btn-create">Ajouter un film</a>
 </div>
-
+  
 @endsection
