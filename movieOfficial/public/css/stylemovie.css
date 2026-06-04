@@ -1,14 +1,84 @@
-.card{
-  background-color: rgb(102, 166, 169 / 0.8);
+body {
+    background-color: #272757;
+    color: #ffffff;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image:
+  linear-gradient(#272757, rgba(188, 187, 255, 0.956)),
+  url("https://fr.pngtree.com/so/film-de-logo");
+}
+
+header {
+    background-color: #171738; 
+    padding: 20px 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; 
+    padding: 20px;
+    color: #ffffff;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px;
+}
   
+.card {
+    width: 190px;
+    height: 254px;
+    position: relative;
+    
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+    font-size: 30px;
+    font-weight: 900;
+    color: #ffffff;
 }
-.cards{
- display: flex;
- flex-wrap: wrap;
- margin: auto 10px;
- justify-content: space-around;
- align-items: center;
+
+.card:hover {
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+    background: rgb(103, 151, 255);
 }
-img{
-  width: 10vW;
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+}
+.card:hover .card-title {
+    color: #ff4b2b; /* Le titre s'illumine en couleur au survol */
+}
+footer {
+    background-color: #12122b; /* Très sombre pour finir la page */
+    color: #8b8ba7;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
