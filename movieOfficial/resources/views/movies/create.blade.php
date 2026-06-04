@@ -18,8 +18,8 @@
     <label>Lien de l'image du film</label>
     <input type="text" name="img" value="{{old('img')}}">   
     <label>Description du film</label>
-    <input type="text" name="title" value="{{old('description')}}"> 
+    <input type="text" name="description" value="{{old('description')}}"> 
     <button type="submit">Enregistrer</button> 
 </form>
-
+<a href="/movies">Retour</a>
 @endsection
