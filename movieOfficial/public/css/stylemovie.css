@@ -88,3 +88,220 @@ footer {
     font-color: rgba(134, 132, 132, 0.477);
     
 }
+a {
+    text-decoration: none;
+    color: aqua;
+}
+.button {
+    text-align: center;
+    margin: 20px 0;
+    box-shadow: linear-gradient(45deg, #ff416c, #ff4b2b);
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ff193fd6;         
+    padding: 12px 24px;        
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 30px;       
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+   
+
+}
+.button:hover {
+    background-color: #ff4b2b;
+    box-shadow: 0 8px 15px rgba(255, 75, 43, 0.3);
+    transform: translateY(-3px);
+}
+.menu-container {
+    position: relative;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.menu-trigger {
+    background-color: #a370f7;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.genre-dropdown {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #1c1c3a;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 6px 0;
+    min-width: 180px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    z-index: 200;
+}
+
+
+.menu-container:hover .genre-dropdown {
+    display: block;
+}
+
+.genre-item {
+    display: block;
+    color:  #ff4b2b;
+    text-decoration: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.genre-item:hover, .genre-item.active {
+    background-color: #4518fa;
+    color: #171738;
+    font-weight: bold;
+}
+/* ==========================================================================
+   STYLE DES CARTES ET CONFIGURATION DES TITRES D'ORIGINE
+   ========================================================================== */
+.card {
+    width: 190px;
+    background-color: #1c1c3a;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative; /* Indispensable pour ancrer les cases de badges */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    padding-bottom: 10px; /* Donne un peu d'espace sous ton texte */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 254px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.card a {
+    color: #fab818;         
+    text-decoration: none;   
+    font-size: 13px;         
+    font-weight: 600;
+    text-align: center;     
+    display: block;
+    padding: 0 4px;
+}
+
+
+.card-badges {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end;  
+    gap: 5px;               
+    z-index: 10;
+}
+
+.badge {
+    display: inline-block;  
+    padding: 3px 6px;       
+    font-size: 10px;        
+    font-weight: 800;       
+    border-radius: 4px;     
+    color: #ffffff;         
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
+    letter-spacing: 0.5px;
+}
+
+
+.badge-year {
+    background-color: rgba(74, 90, 114, 0.95);
+}
+
+.badge-lang {
+    background-color: #0b3daa;
+    text-transform: uppercase; 
+}
+.top-navigation-bar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; 
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.btn-login {
+    background-color: #e50914; 
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-login:hover {
+    background-color: #bf0812; 
+    transform: scale(1.02);
+}
+.hero-presentation-banner {
+    position: relative;
+    max-width: 1200px;         
+    height: 480px;             
+    margin: 0 auto 40px auto;  
+    border-radius: 20px;       
+    overflow: hidden;
+    
+   
+    background: linear-gradient(rgba(13, 13, 109, 0.45), rgba(39, 17, 82, 0.85)), 
+                url('https://fr.vecteezy.com/art-vectoriel/2700780-neon-cinema-film-en-violet-et-violet-color-vector-illustration-of-cinema-film-with-play-icon-compose-de-neon-contours-with-backlight-on-the-dark-mur-de-briques');
+    background-size: cover;
+    background-position: center;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.banner-inner-content {
+    text-align: center;       
+    padding: 0 20px;
+    z-index: 2;
+}
+
+.main-banner-title {
+    font-size: 46px;           
+    font-weight: 800;
+    color: #ffffff;            
+    margin: 0 0 15px 0;
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); 
+}
+
+.main-banner-text {
+    font-size: 22px;           
+    color: #e50914;            
+    margin: 0;
+    font-weight: 500;
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+}
